@@ -1,0 +1,27 @@
+Ms Pac-man
+Created By: Stephen Seidel
+Version: 1.5
+
+---Directions---
+press:
+the up and down arrow keys during any menu to navigate
+the arrow keys during gameplay to navigate
+enter during any menu to select
+the space bar during gameplay to pause or unpause
+m during gameplay to minimize and pause
+escape during any animation to skip animation
+escape during gameplay to enter save menu
+escape during any menu to exit instantly
+s during load menu to exit and mute or unmute sound
+
+---Notes---
+game names can only have letters and numbers
+press arrow keys just before Ms Pac-man reaches an intersection for best results
+
+---Cheat Codes---
+press:
+f to release fruit
+h to get highscore
+n to go to the next level
+p to eat a pill
+r to exit cheat mode

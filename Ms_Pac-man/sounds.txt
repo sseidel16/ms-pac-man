@@ -1,0 +1,10 @@
+0 | board 1   done
+1 | board 2   done
+2 | board 3   done
+3 | board 4   done
+4 | dot       done
+5 | man die   done
+6 | ghost die done
+7 | fruit     done
+8 | pill      6
+9 | menu      1
