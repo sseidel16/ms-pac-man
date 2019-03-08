@@ -38,9 +38,11 @@
                                     <mainClass>seidel.mspacman.Manager</mainClass>
                                 </manifest>
                             </archive>
-                            <includes>
-                                <include>**/*</include>
-                            </includes>
+                            <excludes>
+                                <exclude>info.txt</exclude>
+                                <exclude>seidel/mspacman/installer/*</exclude>
+                                <exclude>*standard.jar</exclude>
+                            </excludes>
                         </configuration>
                     </plugin>
                 </plugins>
@@ -49,6 +51,14 @@
         <profile>
             <id>installer</id>
             <build>
+                <resources>
+                    <resource>
+                        <directory>target/</directory>
+                        <includes>
+                            <include>*standard.jar</include>
+                        </includes>
+                    </resource>
+                </resources>
                 <plugins>
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
@@ -56,9 +66,16 @@
                         <version>3.1.1</version>
                         <configuration>
                             <classifier>installer</classifier>
-                            <excludes>
-                                <exclude>**/Installer*</exclude>
-                            </excludes>
+                            <archive>
+                                <manifest>
+                                    <mainClass>seidel.mspacman.installer.Manager</mainClass>
+                                </manifest>
+                            </archive>
+                            <includes>
+                                <include>info.txt</include>
+                                <include>seidel/mspacman/installer/*</include>
+                                <include>*standard.jar</include>
+                            </includes>
                         </configuration>
                     </plugin>
                 </plugins>
