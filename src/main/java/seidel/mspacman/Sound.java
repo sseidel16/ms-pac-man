@@ -1,5 +1,6 @@
 package seidel.mspacman;
 
+import java.io.BufferedInputStream;
 import java.io.File;
 import java.io.InputStream;
 import javax.sound.sampled.Clip;
@@ -17,7 +18,7 @@ public class Sound {
 
             // read and open audio clip from resources
             InputStream inputStream = this.getClass().getResourceAsStream(path);
-            clip.open(AudioSystem.getAudioInputStream(inputStream));
+            clip.open(AudioSystem.getAudioInputStream(new BufferedInputStream(inputStream)));
         } catch (Exception e) {
             e.printStackTrace();
         }
