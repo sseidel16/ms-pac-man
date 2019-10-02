@@ -10,5 +10,4 @@ The files can be found under resources/boards
 ## Images
 The images are all designed using MS paint and the pixel pencil.
 
-## Link
-mspac-man.webs.com
+## [Link](mspac-man.webs.com)
